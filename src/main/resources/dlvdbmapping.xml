@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dlvdb-mapping>
+    <connection id="1">
+        <password>root</password>
+        <url>jdbc:mysql://localhost/recursive</url>
+        <username>root</username>
+    </connection>
+    <connection id="2">
+        <password>password</password>
+        <url>jdbc:oracle:thin:@/localhost/prova</url>
+        <username>admin</username>
+    </connection>
+    <link className="spa.simone.domain.Program" uri="http://www.example.com/users/0948/reachable.dl" />
+    <mapping connection="1" predicate="parentOf" relation="parent" type="input">
+        <binding attribute="father" term="X" type="string" />
+        <binding attribute="son" term="Y" type="string" />
+    </mapping>
+</dlvdb-mapping>
